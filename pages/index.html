@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Check out my second task at Creative innovative hub, I hate js and about to hate my life"/>
+    <link rel="stylesheet" href="../assets/styles/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lobster&display=swap" rel="stylesheet"/>
+    <title>second js task</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="app__wrapper">
+        <header class="app__header">
+          <h1>My favourite Books</h1>
+          <span>I hate js</span>
+          <form class="search__books" onsubmit="preventSubmit(event)">
+            <input class="search__books--input" type="text" placeholder="Search books.." onkeyup="searchBooks()"/>
+          </form>
+        </header>
+        <main class="books__container">
+          <h2>Favourite books to read</h2>
+          <ul class="books__list"></ul>
+          <form class="add__books" onsubmit="addBooks(event)">
+            <input type="text" class="add__books--input" placeholder="Add a new book" required/>
+            <button>Add</button>
+          </form>
+        </main>
+      </div>
+    </section>
+    <script src="../assets/scripts/main.js"></script>
+  </body>
+</html>
